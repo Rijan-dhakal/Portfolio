@@ -3,6 +3,7 @@ import { Mail, FileText } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import picture from "../assets/picture.jpg";
+import { ThemeToggle } from "./Toggle";
 
 export default function Hero() {
   return (
@@ -11,6 +12,9 @@ export default function Hero() {
       id="hero"
     >
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 max-w-4xl w-full">
+        <div className="absolute z-10 top-10 right-10">
+          <ThemeToggle />
+        </div>
         {/* Intro */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
