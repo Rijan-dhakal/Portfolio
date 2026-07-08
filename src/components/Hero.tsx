@@ -19,7 +19,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="flex flex-col items-center md:items-start text-center md:text-left space-y-6 flex-1"
         >
           <h1 className="font-display-lg text-5xl md:text-7xl font-medium text-on-surface tracking-tight">
@@ -72,7 +72,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="shrink-0 relative mt-8 md:mt-0"
         >
           <div className="w-64 h-64 md:w-80 md:h-80 border border-outline-variant rounded-full overflow-hidden shadow-sm relative z-10 bg-surface-container">
