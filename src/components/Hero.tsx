@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import picture from "../assets/picture.jpg";
 import { ThemeToggle } from "./Toggle";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -56,15 +57,14 @@ export default function Hero() {
             >
               <Mail className="w-5 h-5" />
             </a>
-            <a
-              href="#"
+            <Link
+              to="/Resume.pdf"
               title="Resume"
               target="_blank"
-              rel="noopener noreferrer"
               className="text-on-surface hover:opacity-70 transition-opacity"
             >
               <FileText className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </motion.div>
 
